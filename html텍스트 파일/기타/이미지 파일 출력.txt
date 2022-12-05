@@ -1,0 +1,5 @@
+<body>
+    <img src="notes.png" alt="notes">
+    <embed src="notes.svg" type="image/svg+xml">
+    <object data = "notes.svg" type="image/svg+xml"></object>
+</body>

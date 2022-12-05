@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-60px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #485861;
+  color: #ffe6cf;
+  line-height: 1.4;
+  font-size: 11px;
+  font-weight: 500;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-bottom: 72px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  transition: 0.2s;
+}
+
+input::focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #ffe6cf;
+  font-size: 15px;
+}
+
+a {
+  color: #ffe6cf;
+  text-decoration: none;
+}
+
+.mouse-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.mouse-effect:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+.mouse-effect:hover:after {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.mouse-effect:active:after {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.gnb {
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #394952;
+  box-sizing: border-box;
+  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+}
+
+.gnb a {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.gnb .active {
+  opacity: 1;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 3px;
+        }
+        div ul {
+            list-style: none;
+        }
+        div ul li{
+            margin: 20px 0 20px 0px;
+        }
+        div ul li:first-child {
+            border: 1px solid lightgreen;
+            width: 200px;
+            height: 40px;
+            padding: 10px 10px 0 10px;
+        }
+        div ul li:first-child:hover{
+            background-color: aqua;
+            color: #fff;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        div ul li:nth-child(2) {
+            border: 1px solid lightgreen;
+            width: 200px;
+            height: 40px;
+            padding: 10px 10px 0 10px;
+        }
+        div ul li:nth-child(2):hover {
+            margin-left: 100px;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        div ul :nth-child(3) {
+            border: 1px solid lightgreen;
+            width: 200px;
+            height: 40px;
+            padding: 10px 10px 0 10px;
+        }
+        div ul li:nth-child(3):hover {
+            border: 50px solid aqua;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+        }
+        div ul :nth-child(4) {
+            border: 1px solid lightgreen;
+            width: 200px;
+            height: 40px;
+            padding: 10px 10px 0 10px;
+        }
+        div ul li:nth-child(4):hover {
+            width: 400px;
+            height: 200px;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>color change</li>
+            <li>offset change</li>
+            <li>border change</li>
+            <li>size change</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+!DOCTYPE html
+html lang=en
+head
+    meta charset=UTF-8
+    meta http-equiv=X-UA-Compatible content=IE=edge
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleDocumenttitle
+    style
+        #modal {
+            position fixed;
+            left 0;
+            top 0%;
+            width 100%;
+            height 100%;
+            background rgba(0, 0, 0, 0.5);
+            display none;
+        }
+        .modal-content {
+            background #fff;
+            padding 20px 50px;
+            position absolute;
+            left 50%;
+            top 50%;
+            transition -50%, -50%;
+        }
+        .active {
+            background-color #ccc;
+        }
+        .modal-content span {
+            display inline-block;
+            cursor pointer;
+            width 100%;
+            text-align right;
+            font-size 30px;
+            color #ccc;
+        }
+        .modal-content spanhover {
+            color #000;
+        }
+    style
+head
+body
+        button onclick=show()Open Modelbutton
+        div id=modal
+            div class=modal-content
+                span onclick=hide()xspan
+                pSome text in the Modalp
+            div
+        div
+    script
+        let modal = document.getElementById(modal);
+        let popup = document.getElementsByClassName(modal-content)[0].classList;
+
+        function show () {
+            modal.style.display = flex; 
+            popup.add(active);
+        }
+
+        function hide () {
+            modal.style.display = none;
+        }
+    script
+body
+html

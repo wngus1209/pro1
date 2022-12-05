@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>극동건설</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .business {
+            width: 1280px;
+            margin: 0 auto;
+        }
+        .business ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .business ul li {
+            width: 400px;
+            height: 300px;
+            font-size: 17px;
+            margin: 10px;
+        }
+        .business ul li:first-child {
+            background: url(극동건설/business_img2.jpg);
+        }
+        .business ul li:nth-child(2) {
+            background: url(극동건설/business_img5.jpg);
+        }
+        .business ul li:nth-child(5) {
+            background: url(극동건설/business_img4.jpg);
+        }
+        .business ul li:last-child {
+            background: url(극동건설/business_img6.jpg);
+        }
+        .business ul li p {
+        color: white;
+        padding: 20px 0 0 20px;
+        }
+        .business ul li:nth-child(3) p{
+        color: #000;
+        font-size: 38px;
+        padding: 100px 0 0 100px;
+        }
+        .portfolio {
+            width: 1280px;
+            padding-top: 50px;
+            margin: 40px auto;
+            display: flex;
+            justify-self: space-between;
+        }
+        .right ul {
+            display: flex;
+        }
+        .right ul li {
+            font-size: 11px;
+            width: 100px;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+            margin-left: 10px;
+            position: relative;
+            left: 760px;
+            background-color: rgb(238, 238, 238);
+        }
+        .right ul li:first-child a {
+            display: block;
+            color: #fff;
+            background-color: #233f76;
+        }
+        .right ul li:hover a {
+            display: block;
+            color: #fff;
+            background-color: #233f76;
+        }
+        .right {
+            font-size: 25px;
+        }
+        .work {
+            display: flex;
+        }
+        .left_wrap {
+            width: 1410px;
+            height: 600px;
+            position: relative;
+            left: 0px;
+            top: 50px;
+            background: #233f76;
+        }
+        .work .right {
+            width: 40%;
+            background: #fff;
+        }
+        .work_img {
+            position: relative;
+            left: 612px;
+            top: 0px;
+        }
+        .work .left {
+            display: flex;
+            justify-self: end;
+        }
+        .arrow_left {
+            font-size: 50px;
+            color: #fff;
+            position: relative;
+            left: 620px;
+            top: 300px;
+           
+        }
+        .arrow_right {
+            color: #000;       
+            font-size: 50px;
+            position: relative;
+            left: 1800px;
+            top: 300px;
+       
+        }
+        .right p {
+            margin-left: 70px;
+        }
+        .right p:first-child {
+            font-size: 40px;
+            color: #233f76;
+            position: relative;
+            top: 50px;
+        }
+        .right p:nth-child(2) {
+        position: relative;
+        top: 70px;
+        }
+        .right p:nth-child(3) {
+        position: relative;
+        top: 120px;
+        font-size: 20px;
+        color: #233f76;
+        }
+        .right p:nth-child(4) {
+        position: relative;
+        top: 150px;
+        font-size: 16px;
+        color: rgb(121, 121, 121);
+        }
+        .right p:nth-child(5) {
+        position: relative;
+        top: 260px;
+        font-size: 16px;
+        color: #233f76;
+        border: 1px solid #000;
+        text-align: center;
+        display: block;
+        width: 200px;
+        height: 70px;
+        line-height: 70px;
+        }
+        .custom .contents {
+            position: relative;
+            top: 50px;
+            height: 600px;
+            background: url(극동건설/Untitled-2.jpg) no-repeat fixed center/cover;
+            color: #fff;
+        }
+        .top ul {
+            display: flex;
+        }
+        .top li:first-child {
+            font-size: 40px;
+            position: relative;
+            left: 900px;
+            top: 150px;
+            text-align: center;
+            line-height: 80px;
+        }
+        .top li:nth-child(2) {
+            font-size: 15px;
+            position: relative;
+            left: -50px;
+            top: 400px;
+            text-align: center;
+        }
+        .top li:nth-child(3) {
+            font-size: 100px;
+            position: relative;
+            left: -20px;
+            top: 400px;
+            text-align: center;
+        }
+        .top li:nth-child(4) {
+            font-size: 15px;
+            position: relative;
+            left: 10px;
+            top: 400px;
+            text-align: center;
+        }
+        .top li:nth-child(5) {
+            font-size: 100px;
+            position: relative;
+            left: 40px;
+            top: 400px;
+            text-align: center;
+        }
+        .top li:nth-child(6) {
+            font-size: 15px;
+            position: relative;
+            left: 70px;
+            top: 400px;
+            text-align: center;
+        }
+        .top li:nth-child(7) {
+            font-size: 100px;
+            position: relative;
+            left: 100px;
+            top: 400px;
+            text-align: center;
+        }
+        .top li:last-child{
+            font-size: 15px;
+            position: relative;
+            left: 130px;
+            top: 400px;
+            text-align: center;
+        }
+        .bot {
+            text-align: center;
+            font-size: 40px;
+            position: relative;
+            top: 200px;
+        }
+        .bot p {
+            text-align: center;
+            font-size: 15px;
+            position: relative;
+            top: 10px;
+            color: rgb(37, 37, 37);
+        }
+    </style>
+</head>
+<body>
+    <div class="business">
+        <ul>
+            <li><p>CIVIL<br>WORK<br><br>토목</p></li>
+            <li><p>ARCHITECTURAL<br>WORKS<br><br>건축</p></li>
+            <li><p><strong>BUSINESS</strong></p></li>
+            <li></li>
+            <li><p>PLANTS<br>ENVIRONMENTAL<br>WORK<br><br>플랜트 · 환경</p></li>
+            <li><p>OVERSEAS<br>BUSINESS<br><br>해외사업</p></li>
+        </ul>
+    </div>
+        <div class="portfolio">
+            <div class="right"><strong>PORTFOLIO</strong>
+                <ul>
+                    <li><a href="#">토목</a></li>
+                    <li><a href="#">건축</a></li>
+                    <li><a href="#">플랜트 · 환경</a></li>
+                    <li><a href="#">해외사업</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <div class="work">
+        <div class="left_wrap">       
+            <div class="left">
+            <div class="arrow_left">&LT;</div>
+            <div class="arrow_right">&gt;</div>
+            <div class="work_img"><img src="D:\강주현\Html5&CSS\html_2\극동건설\port_img1_1.jpg" alt="work"></div>
+        </div>
+    </div>
+        <div class="right">
+            <p><strong>도로/터널/교량</strong></p>
+            <p>____</p>
+            <p><strong>CIVILENGINEERING&nbspWORKS</strong></p>
+            <p>극동건설은 허허벌판에 길을 내고, 망망대해에 다리를 <br>놓으며, 대한민국 지도를 바꾸어 왔습니다.</p>
+            <p>Detail view</p>
+        </div>
+    </div>
+        <div class="custom">
+            <div class="contents">
+                <div class="top">
+                <ul>
+                    <li>
+                    <p>개개인의 특성과 능력을 중시하는 극동건설은<br>
+                        여러분의 <strong>성장의 터</strong>를 마련합니다.</p>
+                    </li>
+                
+                    <li>
+                        <h2>인재상</h2>
+                        <p><br><br>극동건설이 추구하는 인재상을<br>여러분께 소개합니다</p>
+                    </li>
+                    <li><p>|</p></li>
+                    <li>
+                        <h2>인사제도</h2>
+                        <p><br><br>임직원의 역량향상과 동기부여를<br> 위해 다양한 제도를 운영합니다</p>
+                    </li>
+                    <li><p>|</p></li>
+                    <li>
+                        <h2>채용안내</h2>
+                        <p><br><br>극동건설의 채용제도 및 절차를<br> 자세히 소개합니다.</p>
+                    </li>
+                    <li><p>|</p></li>
+                    <li>
+                        <h2>채용공고</h2>
+                        <p><br><br>극동건설의 채용공고를<br> 소개합니다</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bot"><strong>PR Center<Br></strong>
+            <p>세상에 없던 신기술을 개척하는 기업,극동건설이 기술의 진보를 선도합니다 </p>
+        </div>
+    </div>
+</body>
+</html>

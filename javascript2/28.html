@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = "123456-1234567";
+      let a1 = a.slice(7);
+      document.write(a.replace(a1, "*******") + "<br>");
+      //replace 뒤에 오는 값은 위의 let 변수들을 이용해 결과값을 재출력하는 명령어//
+      document.write(a.substring(0, 7) + "*******" + "<br>" + "<br>");
+
+      let b = "01061291234";
+      let b1 = b.slice(7);
+      document.write("DGSD" + "<br>" + b.replace(b1, "****") + "<br>");
+    </script>
+  </body>
+</html>

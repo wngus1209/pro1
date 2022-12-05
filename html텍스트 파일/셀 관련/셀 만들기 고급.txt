@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+          
+        }
+        td {
+            border: 1px solid;
+            text-align: center;
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .bg {
+            background-color: rgb(235, 231, 231);
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="bg"><strong>대상</strong></td><td class="bg"><strong>승차권종별</strong></td><td class="bg"><strong>1구간</strong></td><td class="bg"><strong>2구간</strong></td><td class="bg"><strong>비고</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="bg"><strong>어른 만19세 이상~만65세 미만</strong></td>
+        </tr>
+        <tr>
+            <td>교통카드</td><td>1,250</td><td>1,350</td><td></td>
+        </tr>
+        <tr>
+            <td>보통권</td><td>1,400</td><td>1,500</td><td>교통카드 운임에 150원 추가</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="bg"><strong>청소년 만13세이상~19세 미만</strong></td>
+        </tr>
+        <tr>
+            <td>교통카드</td><td>880</td><td>960</td><td></td>
+        </tr>
+        <tr>
+            <td>보통권</td><td>1,400</td><td>1,500</td><td>어른운임적용(할인없음)</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="bg"><strong>어린이 만6이상~만13세미만</strong></td>
+        </tr>
+        <tr>
+            <td>교통카드</td><td>550</td><td>600</td><td rowspan="2">어른 교통카드 운임의 50% 할인</td>
+        </tr>
+        <tr>
+            <td>할인권</td><td>600</td><td>650</td>
+        </tr>
+        <tr>
+            <td class="bg"><strong>65세 이상 노인<br>장애인 독립유공자,<br>국가유공상이자,<br>5.18민주화운동부상자,<br>특수임무부상자,</strong></td><td>우대권</td><td colspan="3">무임(100%할인) 신분증 제시할 경우
+        </tr>
+    </table>
+</body>
+</html>

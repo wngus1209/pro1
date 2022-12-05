@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>detail</title>
+    <style>
+      body {
+        padding: 24px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 24px;
+        box-sizing: border-box;
+        background-color: black;
+      }
+      .text-area {
+        margin-top: 192px;
+      }
+      .title {
+        margin-bottom: 12px;
+      }
+
+      sup {
+        font-size: 10px;
+      }
+      .content {
+        font-size: 16px;
+        font-weight: normal;
+      }
+      .line {
+        width: 30px;
+        height: 1px;
+        border-bottom: 1px solid #ffe6cf;
+        margin: 32px 0;
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="Issues.html"><img src="img/icon/arrow-back.svg" alt="" /></a>
+      <img src="img/icon/like.svg" alt="" />
+    </header>
+    <div class="text-area">
+      <h1 class="title stagger-item">Issues <sup>1</sup></h1>
+      <p class="stagger-item">
+        we'll make a moblie magazine <br />
+        using html, css only.
+      </p>
+    </div>
+    <div class="line stagger-item"></div>
+    <p class="content stagger-item">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+      eligendi accusantium qui dolorum impedit, iure a minus consequatur
+      voluptatum, corrupti maiores iusto atque eaque magni voluptatibus magnam
+      reiciendis commodi facilis.
+    </p>
+    <nav class="gnb">
+      <a href="index.html" class="cover mouse-effect">
+        <img src="img/icon/cover.svg" alt="" />
+      </a>
+      <a href="Issues.html" class="issue mouse-effect active">
+        <img src="img/icon/issue.svg" alt="" />
+      </a>
+      <a href="like.html" class="like mouse-effect">
+        <img src="img/icon/like.svg" alt="" />
+      </a>
+      <a href="my.html" class="my mouse-effect">
+        <img src="img/icon/more.svg" alt="" />
+      </a>
+    </nav>
+  </body>
+</html>

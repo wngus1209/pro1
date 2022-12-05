@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-image: url(file:///D:/%EA%B0%95%EC%A3%BC%ED%98%84/Html5&CSS/images/photo1.jpg);
+            background-repeat: no-repeat;
+            background-color: #ccc;
+            background-attachment: fixed;
+            height: 2000px;
+            background-position: left top;
+            background-size: 50%;
+        }
+    </style>
+</head>
+<body>
+    <p>background</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            color: #f00 !important;
+        }
+        /* !important는 색상이 변하지 않는 절댓값이다 */0
+        #one {
+            color: #0ff;
+        }
+        p {
+            color: #ff0;
+        }
+    </style>
+</head>
+<body>
+    <p class="first" id="one" style="color: #00f">first</p>
+    <!-- body에 직접 입력하는 색은 important보다는 하위지만 더 높은밸류 -->
+    <p class="second" id="two">first</p>    
+    <p class="third" id="three">first</p>    
+    <p class="first" id="one" style="color: #0f0 !important;">first</p>    
+    <p class="first" id="one">first</p>    
+    <p class="first" id="one">first</p>    
+</body>
+</html>

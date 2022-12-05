@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ecc0ce3a39.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        .icon i {
+            justify-content: space-between;
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(122, 166, 231);
+            color: #fff;
+        }
+        .icon a {
+            text-decoration: none;
+        }
+        .icon i:hover {
+            background-color: rgb(63, 120, 206);
+        }
+        .text i {
+            justify-content: space-between;
+            margin-right: 10px;
+            width: 150px;
+            height: 50px;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(122, 166, 231);
+            color: #fff;
+            letter-spacing: 2px;
+            
+        }
+        .text a {
+            text-decoration: none;
+        }
+        .text i:hover {
+            background-color: rgb(63, 120, 206);
+        }
+        .text i::after {
+            content: ' \00bb';
+            position: relative;
+            left: 10px;
+            opacity: 0;
+        }
+        .text a:hover i::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Icon Buttonss</h1>
+    <h3>Icon buttons:</h3>
+    <ul class="icon">
+        <li><a href="#"><i class="fa-solid fa-house-user"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-trash-can"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-x"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-folder"></i></a></li>
+        
+    </ul>
+    <h3>Icon buttons with text:</h3>
+    <ul class="text">
+        <li><a href="#"><i class="fa-solid fa-house-user">&nbsp;Home</i></a></li>
+        <li><a href="#"><i class="fa-solid fa-bars">&nbsp;Menu</i></a></li>
+        <li><a href="#"><i class="fa-solid fa-trash-can">&nbsp;Trash</i></a></li>
+        <li><a href="#"><i class="fa-solid fa-x">&nbsp;Close</i></a></li>
+        <li><a href="#"><i class="fa-solid fa-folder">&nbsp;Folder</i></a></li>
+        
+    </ul>
+</body>
+</html>

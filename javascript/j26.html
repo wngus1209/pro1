@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const fruits = ["사과", "바나나", "딸기", "망고"];
+      document.write(fruits + "<br>");
+      document.write(fruits.toString() + "<br>");
+      document.write(fruits.join("-") + "<br>");
+
+      fruits.pop();
+      document.write(fruits + "<br>");
+
+      fruits.push("키위");
+      document.write(fruits + "<br>");
+
+      fruits.shift();
+      document.write(fruits + "<br>");
+
+      fruits.unshift("수박");
+      document.write(fruits + "<br>");
+
+      const arr1 = ["하나", "둘", "셋"];
+      const arr2 = ["one", "two", "three"];
+      const arr3 = ["Html", "css", "css3"];
+      document.write(arr1.concat(arr2, arr3), "<br>");
+
+      arr3.splice(2, 1, "레몬", "오렌지");
+      document.write(arr3 + "<br>");
+      //splice에서 뒤에 1을 입력 시 앞의 숫자(해당 배열에선 2,즉 css3)를 제거하고 뒤의 문자를 입력,
+      //0을 입력 시 앞의 숫자(해당 배열에선 2,즉 css3) 뒤에 추가로 문자를 입력함
+
+      const grade = ["3학년", "5학년", "2학년", "1학년", "6학년"];
+      document.write(grade.sort(), "<br>");
+      document.write(grade.reverse(), "<br>");
+      document.write(grade.slice(1, 4), "<br>");
+      //슬라이스(slice)는 마지막 번호 '직전' 까지만 가져온다 예를 들어
+      //위의 배열에서 sort,reverse로 정렬된 상태(6,5,3,2,1 학년)에서 slice(1,4)입력 시1~3번에 해당하는 5(1),3(2),2(3)학년을 가져옴
+    </script>
+  </head>
+  <body></body>
+</html>

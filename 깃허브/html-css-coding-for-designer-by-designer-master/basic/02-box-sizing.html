@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BoxSizing</title>
+    <style>
+        div.box {
+            display: inline-block;
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            padding: 15px;
+            border: 10px solid yellow;
+        }
+
+        div.border-box {
+            box-sizing: border-box;
+        }
+
+        div.content-box {
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h2>border</h2>
+    <div class="box content-box">box1</div>
+    <div class="box content-box">box2</div>
+    <div class="box border-box">box1</div>
+    <div class="box border-box">box1</div>
+    <p>
+        html box-sizing 기본 속성은 content-box 이다.
+        content-box 특징은 padding, margin, border 가 width, height 개별로 차지한다.
+        그러므로 box1과 box2는 width 150px, height 150px 을 차지하게 된다.
+    </p>
+    <p>
+        border-box 는 padding, margin, border 가 width 에 포함된다.
+    </p>
+    <hr/>
+
+</section>
+
+</body>
+</html>

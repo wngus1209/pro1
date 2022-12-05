@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>반응형 웹</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div.container {
+            width: 100%;
+            border: 1px solid gray;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+         /*pc: 4열 */
+        .container > div.item {
+            width: 25%;
+            height: 200px;
+            background-color: cadetblue;
+            text-align: center;
+            padding: 1px 20px;
+
+            /* 내부 content 여기서는 1,2,3,4 상하 가운데 정렬 하기위해 필요 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mobile-view, .tablet-view {
+            display: none !important;
+        }
+
+
+        /*화면 사이즈 1440px 미만 ~ 900px 이상*/
+        /* 노트북 화면일경우: 3열 */
+        @media only screen and (max-width: 1440px) and (min-width: 900px) {
+            .container > div.item {
+                width: 33%;
+            }
+            .tablet-view {
+                display: inherit !important;
+            }
+            .mobile-hide {
+                display: none !important;
+            }
+        }
+        /* 화면사이즈 600px 이하 */
+        /* 모바일일 경우: 1열*/
+        @media only screen and (max-width: 600px) {
+            .container > div.item {
+                width: 100%;
+            }
+            .mobile-view {
+                display: inherit !important;
+            }
+            .mobile-hide {
+                display: none !important;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+<div>
+    <div class="mobile-hide">this is pc mode</div>
+    <div class="tablet-view">this is tablet mode</div>
+    <div class="mobile-view">this is mobile mode</div>
+
+</div>
+
+</body>
+</html>

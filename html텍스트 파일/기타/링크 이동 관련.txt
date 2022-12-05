@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            display: block;
+            /* 해당 명령어 입력 시 해당 줄에 다른 속성이 올 수 없음 */
+            color: #f00;
+        }
+        /* 기본 링크(link) 색상 */
+        a:visited {
+            color: #0f0;
+        }
+        /* 이미 한번 방문(visted)해서 쿠키가 남은 링크 */
+        a:hover {
+            color: #00f;
+        }
+        /* 마우스를 올려 놓았을(hover)때 */
+        a:active{
+            color: #ff0;
+        }
+        /* 누르는 '동작(active)'을 했을 때 */
+        p {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.naver.com" target="_blank">네이버</a> 
+    <!-- 새창이 계속 열림 -->
+    <a href="http://www.daum.net" target="_new">다음</a> 
+    <!-- 한번만 새창이 열림 -->
+    <a href="1005b.html" target="_blank">1005b.html 페이지로 이동</a>
+    <a href="#first" target="_self">첫번째 p로 이동</a>
+    <a href="#second" target="_self">두번째 p로 이동</a><br>
+        <!-- self:현재 페이지에서 새창을 열지 않고 이동 -->
+    <a href="1005b.html#news" target="_new">B페이지의 뉴스</a><br>
+    <a href="1005b.html#shopping" target="_new">B페이지의 쇼핑</a>
+    <a href="mailto:rkdwngus0320naver.com">관리자이메일</a>
+    <p id="first">first</p>
+    <p id="second">second</p>
+</body>
+</html>

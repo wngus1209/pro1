@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        input[type=radio]{
+            display: none;
+        }
+        ul.box {
+            width: 500px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        ul.box li {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+        }
+        .pipe {
+            background: url(images/pipe.png);
+        }
+        .pro {
+            background: url(images/propeller.png);
+        }
+        ul.btnbox {
+            width: 500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        ul.btnbox li {
+             width: 100px;
+        }
+        ul.btnbox li label {
+            cursor: pointer;
+            display: block;
+            /* background: #ccc; */
+            border: 1px solid #000;
+            border-radius: 50px;
+            padding: 10px;
+        }
+        #left:checked ~ ul.btnbox li:first-child label {
+            background: #000;
+            color: #fff;
+        }
+        #right:checked ~ ul.btnbox li:nth-child(2) label {
+            background: #000;
+            color: #fff;
+        }
+        #off:checked ~ ul.btnbox li:nth-child(3) label {
+            background: #000;
+            color: #fff;
+        }
+        #left:checked ~ ul.box .pro {
+            /* animation-name: left;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; */
+            animation: left 3s linear infinite;
+        }
+        @keyframes left {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(-1080deg);}
+        }
+        #right:checked ~ ul.box .pro {
+            /* animation-name: right;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; */
+            animation: right 3s linear infinite;
+        }
+        @keyframes right {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(1080deg);}
+        }
+        #off:checked ~ ul.box .pro {
+        animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="btn" id="left" >
+    <input type="radio" name="btn" id="right">
+    <input type="radio" name="btn" id="off">
+    <ul class="box">
+        <li class="pipe"></li>
+        <li class="pro"></li>
+    </ul>
+    <ul class="btnbox">
+        <li><label for="left">turn left</label></li>
+        <li><label for="right">turn rihgt</label></li>
+        <li><label for="off">off</label></li>
+    </ul>
+</body>
+</html>

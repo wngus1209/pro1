@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            width: 1440px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .box {
+            height: 400px;
+        }
+        .box_wrap {
+            width: 33.333%;
+            height: 400px;
+            float: left;
+        }
+        .box_wrap:first-child {
+            background: #ccc;
+            
+        }
+        .box_wrap:nth-child(2) {
+            background: #ddd;
+            margin-left: 120px;
+        }
+        .box_wrap:last-child {
+            background: #ccc;
+            margin-left: 120px;
+        }
+    </style>
+</head>
+<body>
+<div calss="banner">
+    <div class="box_wrap">
+        <div class="box"></div>
+     </div>
+    <div class="box_wrap">
+        <div class="box"></div>
+    </div>
+    <div class="box_wrap">
+        <div class="box"></div>
+    </div>
+</div>
+</body>
+</html>

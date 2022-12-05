@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ecc0ce3a39.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.jpg">
+    <title>Document</title>
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .logo img {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            left: 250px;
+            top: 60px;
+        }
+        .search {
+            position: relative;
+            left: 370px;
+            top: 17px;
+        }
+        .search span a {
+            position: relative;
+            right: 35px;
+            top: 2px;
+            color: green;
+            text-decoration: none;
+        }
+        .top_menu {
+            position: absolute;
+            right: 100px;
+            width: 100%;
+            top: 0px;
+        }
+        .top ul {
+            list-style: none;
+            font-size: 13px;
+            position: absolute;
+            right: 400px;
+            top: 30px;
+        }
+        .top ul li {
+            display: inline;
+        }
+        .top ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        .trans {
+            font-size: 13px;
+            font-weight: bold;
+            position : absolute;
+            right: 580px;
+            top: 30px;
+        }
+        .trans img {
+            position: relative;
+            top: 2px;
+        }
+        .trans ul {
+            position: absolute;
+            right: 0px;
+            width: 100px;
+            top: -1px;
+            list-style: none;
+        }
+        .trans ul li {
+            width: 170px;
+            position: relative;
+            right: 60px;
+        }
+        .trans ul li span {
+            position: relative;
+            left: 5px;
+        }
+        .trans ul li ul li p {
+            margin-left: -25px;
+            margin-top: 3px;
+            padding-top: 5px;
+            position: relative;
+            left: 75px;
+        }
+        .trans ul li ul li {
+            position: relative;
+            top: 17px;
+            display: none;
+        }
+        .trans > ul > li:hover > ul > li  {
+            display: block;
+        }
+       .my ul {
+        position: absolute;
+        top: 70px;
+        right: 400px;
+        list-style: none;
+       }
+       .my ul li {
+        float: left;
+        padding-left: 20px;
+       }
+       .my ul li i {
+        text-align: center;
+        font-size: 25px;
+       }
+       .my ul li p {
+        font-size: 12px;
+        margin-top: 5px;
+        font-weight: 500;
+       }
+       .my ul li a {
+        color: #000;
+       }
+        .line {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: rgb(179, 179, 179);
+        margin-top: 50px;
+       }
+       .menu ul {
+        display: flex;
+        list-style: none;
+        width: 700px;
+        justify-content: space-between;
+        font-size: 21px;
+        font-weight: bold;
+        margin-left: 250px;
+        margin-top: 10px;
+        letter-spacing: -2px;
+        
+       }
+       .menu ul li {
+        float: left;
+       
+       }
+       .menu ul li a {
+       text-decoration: none;
+       color: #000;
+        }
+        .menu a {
+            text-align: center;
+            color: #000;
+            
+        }
+        .menu a i {
+            font-size: 20px;
+        }
+        .menu a p {
+            font-size: 15px;
+        }
+        .menu .all {
+            position: absolute;
+            top: 138px;
+            right: -115px;
+        }
+        .menu .all span {
+            padding-left: 10px;
+            font-weight: 500;
+            font-size: 17px;
+        }
+        .menu ul li a:hover {
+            color: green;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a href="file:///D:/%EA%B0%95%EC%A3%BC%ED%98%84/Html5%26CSS%26javascript/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/1.html#"><img src="images/1.png" alt="logo"></a>
+    </div>
+        <div class="search">
+            <input type="text" placeholder="여행지, 숙박, 교통 등으로 검색"
+            style="width:300px; height: 30px; border: 2px solid green; border-radius: 20px; padding-left: 20px;">
+            <span><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></span>
+        </div>
+    </div>
+    <div class="top_menu">
+    <div class="top">
+        <ul>
+            <li><a href="#"?>로그인 &nbsp;|&nbsp; </a></li>
+            <li><a href="#"?>회원가입 &nbsp;|&nbsp;</a></li>
+            <li><a href="#"?>고객센터</a></li>
+        </ul>
+    </div>
+    <div class="trans">
+            <ul>
+                <li><span> 환율보기 <img src="images/2.jpg" alt="KRW"> KRW ▼ </span>
+                    <ul> 
+                        <li>
+                            <p><img src="images/3.jpg" alt="JPY"> CNY 184.32 ▼</p>
+                            <p><img src="images/4.jpg" alt="CNY"> JPY 952.99 ▲</p>
+                            <p><img src="images/5.jpg" alt="EUR"> EUR 1,358.14 ▼</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+            <div class="my">
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-user"><p>내정보</p></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-gift"><p>이벤트</p></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart"><p>찜목록</p></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="line"></p>
+    <div class="menu">
+        <ul>
+            <li><a href="#">해외여행</a></li>
+            <li><a href="#">국내여행</a></li>
+            <li><a href="#">테마패키지</a></li>
+            <li><a href="#">항공</a></li>
+            <li><a href="#">호텔</a></li>
+            <li><a href="#">프로모션</a></li>
+        </ul>
+        <ul class="all">
+            <li><a href="#"><i class="fa-solid fa-bars"><span>전체메뉴</span></i></a></li>
+        </ul>
+    </div>
+    <p class="line_two"></p>
+<script>
+</script>
+</body>
+</html>

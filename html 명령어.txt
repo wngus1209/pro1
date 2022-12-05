@@ -1,0 +1,16 @@
+기본= </> 명령어 닫기
+
+<strong> : 글자 강조
+<h1> : 제목 (h1~h6으로 글자크기 조절)
+<a href=""> : 링크 달기
+<a target="_blank" href""> : 링크 새 탭에서 열기
+title="" : 해당 글자에 마우스 올려놓을시 글자 밑에 내용 출력
+<li> : 줄 띄움
+<ul> : 점 그룹으로 묶기(주의점 : 묶을 그룹 위 아래로 입력해야함)
+<ol> : 숫자 그룹으로 묶기
+alt+shift+방향키 위아래 한줄 복사
+ctrl+shift+k 한줄삭제
+ctrl+/ 해당 줄을 '주석'화 시킴
+display: inline / block 정렬로 연계 가능
+text-align: center 등 정렬로 연계 가능
+alt+w 선택부분을 감싸주는 p태그 생성(htmltagwrap) 확장 프로그램 필요!

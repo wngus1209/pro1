@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let name = prompt("이름을 입력해 주세요");
+      let a = prompt("신장을 입력해 주세요");
+      let b = prompt("몸무게를 입력해 주세요");
+      let bmi = b / ((a * a) / 10000);
+      if (bmi <= 18.5) {
+        result = "저체중";
+      } else if (bmi <= 23) {
+        result = "정상";
+      } else if (bmi <= 25) {
+        result = "과체중";
+      } else {
+        result = "비만";
+      }
+      document.write(
+        name +
+          "님은 신장이 " +
+          a +
+          "cm이며 체중은 " +
+          b +
+          "kg이므로 " +
+          result +
+          "입니다"
+      );
+    </script>
+  </body>
+</html>

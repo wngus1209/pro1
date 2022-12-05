@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=radio] {
+            text-align: center;
+        }
+        p {
+            position: relative;
+            animation: move 0.5s linear alternate infinite;
+            width: 0;
+            height: 0;
+            border-left: 10px solid #000;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-top: 10px solid transparent;
+            margin: 100px auto 20px;
+        }
+        @keyframes move {
+            0% {left: -5px;}
+            100% {left: 5px;}
+        }
+        .as label {
+            padding: 5px 20px;
+            border: 1px solid #000;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        #start:checked ~ .as label:first-of-type,
+        #stop:checked ~ .as label:last-of-type {
+            background: #000;
+            color: #fff;
+        }
+        #stop:checked ~ p {
+            animation-play-state: paused;
+        }
+        @keyframes color {
+            0% {background: #8ac007;}
+            15% {background: #ccc;}
+            30% {background: #8ac007;}
+            45% {background: #07bec0;}
+            60% {background: #c07d07;}
+            75% {background: #333;}
+            100% {background: #8ac007;}
+        }
+        .as label:hover {
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3),
+            inset 0 0 10px rgba(255, 255, 255, 0.5),   
+            inset 0 0 50px rgba(255, 255, 255, 0.5);  
+            animation: color 6s infinite alternate;
+        }
+        .as {
+            margin:  auto;
+            display: flex;
+            width: 160px;        
+        }
+        .ad {
+            margin: auto;
+            display: flex;
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <div class="ad">
+        <input type="radio" name="tri" id="start" checked>
+        <input type="radio" name="tri" id="stop">
+    </div>
+    <p></p>
+    <div class="as">
+        <label for="start">start</label>
+        <label for="stop">stop</label>
+    </div>
+</body>
+</html>

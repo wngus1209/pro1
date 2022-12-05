@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justshop</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    font: 1em Arial, 돋움, Doctum, sans-serif;
+}
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+header .gnb {
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 800px;
+}
+header .gnb > ul {
+    display: flex;
+}
+header .gnb > ul > li {
+    position: relative;
+    width: 25%;
+}
+header .gnb > ul > li > a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    box-sizing: border-box;
+}
+header .gnb > ul > li:last-child > a {
+    border-right: 1px solid #000;
+}
+header .gnb li ul {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+    box-sizing: border-box;
+}
+header .gnb li ul li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.gnb > ul > li:hover > a, .gnb li ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+/*case01*/
+/* .gnb > ul > li:hover ul {
+    height: 120px;
+} */
+.gnb > ul:hover ul {
+    height: 120px;
+    border-bottom: 1px solid #f00;
+}
+.gnb > ul > li:first-child ul {
+    border-left: 1px solid #f00;
+}
+.gnb > ul > li:last-child ul {
+    border-right: 1px solid #f00;
+}
+.slide {
+    width: 100%;
+    height: 300px;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+.contents {
+    display: flex;
+    padding: 10px 5px;
+}
+.contents > div {
+    width: 33.3333%;
+}
+.contents .left input[type=radio] {
+    display: none;
+}
+.contents .left .btntitle {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+.contents .left .btntitle li {
+    width: 100px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.contents .left .btntitle li:first-child {
+    border-right: none;
+}
+.contents .left .btntitle li label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#notice:checked ~ .btntitle li:last-child {
+    background: #ccc;
+} 
+#gallery:checked ~ .btntitle li:first-child {
+   background: #ccc;
+}
+#notice:checked ~ .btntitle li:first-child {
+    background: #fff;
+    border-bottom: none;
+} 
+#gallery:checked ~ .btntitle li:last-child {
+    background: #fff;
+    border-bottom: none;
+} 
+.contents .con {
+    position: relative;
+    top: 41px;
+    height: 130px;
+    border: 1px solid #000;
+}
+.contents .con .first td a {
+    display: block;
+    width: 270px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+}
+#notice:checked ~ .con .first {
+    display: block;
+}
+#notice:checked ~ .con .second {
+    display: none;
+}
+#gallery:checked ~ .con .first {
+    display: none;
+}
+#gallery:checked ~ .con .second {
+    display: block;
+}
+.contents .con .second ul {
+    display: flex;
+    justify-content: space-around;
+}
+.contents .con .second ul img {
+    width: 120px;
+}
+.contents .con .first td a:hover {
+    text-decoration: underline;
+}
+#popup {
+    position: fixed;
+    left: 30%;
+    top: 30%;
+    display: none;
+}
+.pop {
+    width: 500px;
+    height: 300px;
+    background: #fff;
+    border: 1px solid #000;
+}
+#popup:target {
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo"></div>
+            <div class="gnb">
+                <ul>
+                    <li><a href="#">탑</a>
+                        <ul>
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">아우터</a>
+                        <ul>
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">탑</a>
+                        <ul>
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">탑</a>
+                        <ul>
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="slide">
+            <img src="images2/slide01.jpg" alt="slide01">
+        </div>
+        <div class="contents">
+            <div class="left">
+                <input type="radio" name="board" id="notice" checked>
+                <input type="radio" name="board" id="gallery">
+                <ul class="btntitle">
+                    <li><label for="notice">공지사항</label></li>
+                    <li><label for="gallery">갤러리</label></li>
+                </ul>
+                <ul class="con">
+                    <li class="first">
+                        <table>
+                            <tr>
+                                <td><a href="#popup">애스크로 서비스 변경 약관을 확인하세요</a></td>
+                                <td>2019-10-10</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">배송 택배사 변경 및 배송방식 변경에 따른 공지</a></td>
+                                <td>2019-10-10</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">여름 이월상품 정리 세일 안내</a></td>
+                                <td>2019-10-10</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">여름 바캉스 상품 정리 세일 안내</a></td>
+                                <td>2019-10-10</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">반품 및 교환 조건 변경 공지</a></td>
+                                <td>2019-10-10</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">상품별 사이즈표 보는 방법과 치수 공지</a></td>
+                                <td>2019-10-10</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="second">
+                        <ul>
+                            <li><img src="images2/gallery01.gif" alt="gallery01"></li>
+                            <li><img src="images2/gallery02.gif" alt="gallery02"></li>
+                            <li><img src="images2/gallery03.gif" alt="gallery03"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="center"></div>
+            <div class="right"></div>
+        </div>
+        <div id="popup">
+            <div class="pop">
+                <a href="#">닫기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

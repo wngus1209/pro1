@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>회원가입</legend>
+            <label for="">아이디입력</label>
+            <input type="text" id="user_id" name="user_id" maxlength="9" size="10" placeholder="아이디입력" autofocus required><br>
+            <label for="">비밀번호입력</label>
+            <input type="text" id="user_pw" name="user_pw" maxlength="9" min="5" max="10"><br>
+            <label for="gender">성별</label>
+            <input type="radio" id="gender" name="gender" checked>남
+            <input type="radio" id="gender" name="gender">여<br>
+
+            <p>당신의 취미는</p>
+            <label for="travel">여행</label>
+            <input type="checkbox" id="travel" name="hobby">
+            <label for="car">자동차</label>
+            <input type="checkbox" id="car" name="hobby">
+            <input type="button" value="click me" onclick="alert('Hello')"><br>
+            <label for="favcolor">색상선택</label>
+            <input type="color" id="favcolor" name="favcolor"><br>
+            날짜 <input type="date"><br>
+            날짜 시간 <input type="datetime-local"><br>
+            <button type="submit">보내기</button>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        /*세로 분할*/
+        .flex {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            padding: 10px;
+        }
+        .item {
+            flex: 1;
+        }
+        .item2 {
+            flex: 2;
+        }
+        .item3 {
+            flex: 3;
+        }
+
+        /*  가로 분할 */
+        div.main {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            background: lightgray;
+        }
+
+        .main > div.box1 {
+            flex: 1;
+        }
+
+        .main > div.box2 {
+            flex: 2;
+        }
+
+        .main > div.box3 {
+            flex: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+<h2>flex 세로 분할(기본 속성)</h2>
+<div class="flex">
+    <div class="item" style="background-color: red">flex</div>
+    <div class="item" style="background-color: hotpink">flex</div>
+    <div class="item2" style="background-color: gray">flex</div>
+    <div class="item2" style="background-color: goldenrod">flex</div>
+    <div class="item3" style="background-color: greenyellow">flex</div>
+    <div class="item3" style="background-color: lightgray">flex</div>
+</div>
+
+<hr>
+<h2>flex 가로 분할</h2>
+<div class="main">
+    <div class="box1">A</div>
+    <div class="box1" style="background-color: greenyellow">B</div>
+    <div class="box2" style="background-color: darkseagreen">C</div>
+    <div class="box2" style="background-color: orangered">D</div>
+    <div class="box3" style="background-color: blueviolet">E</div>
+    <div class="box3" style="background-color: dodgerblue">E</div>
+
+
+</div>
+
+</body>
+</html>

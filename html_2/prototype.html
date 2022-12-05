@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo {
+            position: relative;
+            left: 100px;
+            top: 60px;
+        }
+        .logo ul {
+            list-style: none;
+        }
+        .logo ul li:nth-child(2) {
+            position: relative;
+            left: 135px;
+            top: -40px;
+        }
+        .menu {
+            position: relative;
+            left: 200px;
+            top: 60px;
+        }
+        .menu ul {
+            list-style: none;
+            display: flex;
+            width: 600px;
+            justify-content: space-between;
+            font-size: 22px;
+            font-weight: bold;
+            position: relative;
+            top: -95px;
+            left: 100px;
+        }
+        .search {
+            position: relative;
+            left: 500px;
+            top: -150px;
+            background-color: rgb(237, 237, 237);
+            width: 230px;
+            height: 30px;
+            border: 1px solid rgb(164, 164, 164);
+           
+        }
+        .search .qa {
+            position: relative;
+            top: -48px;
+            left: 45px;
+            font-size: 10px;
+            color: rgb(77, 77, 77);
+            
+        }
+        .search img {
+            position: relative;
+            top: -8px;
+            left: 20px;
+        }
+        .toplist ul {
+            list-style: none;
+            position: relative;
+            top: -180px;
+            left: 730px;
+            font-size: 8px;
+            color:rgb(63, 63, 63);
+            display: flex;
+        }
+        .toplist ul li:first-child {
+            position: relative;
+            left: -5px;
+            font-size: 8px;
+        }
+        .line1 {
+            border: 0.01px solid rgb(120, 120, 120);
+            width: 830px;
+            position: relative;
+            left: 150px;
+            top: -90px;
+        }
+        .text1{
+            font-size: 20px;
+            position: relative;
+            left: 200px;
+            top: -70px;
+        }
+        .main ul {
+            position: relative;
+            display: flex;
+            left: 180px;
+            top: -60px;
+            list-style: none;
+        }
+        .main ul li:first-child{
+           background-image: url(image\img.png);
+        }
+        .background-wrap {
+            background-image: url(image/img1.png);
+            background-size: 360px 346px;
+            width: 360px;
+            height: 346px;
+            display: flex;
+            line-height: 40px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            left: 200px;
+            top: -60px;
+        }
+        .content {
+            display: flex;
+            flex-direction:column;
+            color: #fff;
+            margin-top: -20px;
+        }
+        .content span:nth-child(1) {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .content span:nth-child(2) {
+            font-size: 15px;
+        }
+        .content span:nth-child(3) {
+            font-size: 12px;
+            margin-top: 5px;
+            width: 100px;
+            height: 25px;
+            background-color: #fff;
+            color: #000;
+            position: relative;
+            top: 15px;
+            border-radius: 20px;
+        }
+        .content span:nth-child(3) p {
+            position: relative;
+            top: -20px;
+        }
+        .content span:nth-child(3) p a {
+            position: relative;
+            top: -1px;
+            left: 5px;
+            font-size: 13px;
+        }
+        .background-wrap2 {
+            background-image: url(image/img2.png);
+            background-size: 360px 341px;
+            width: 360px;
+            height: 341px;
+            display: flex;
+            line-height: 40px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            left: 600px;
+            top: -410px;
+
+        }
+        .content {
+            display: flex;
+            flex-direction:column;
+            color: #fff;
+            margin-top: -20px;
+        }
+        .content span:nth-child(1) {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .content span:nth-child(2) {
+            font-size: 15px;
+        }
+        .content span:nth-child(3) {
+            font-size: 12px;
+            margin-top: 5px;
+            width: 100px;
+            height: 25px;
+            background-color: #fff;
+            color: #000;
+            position: relative;
+            left: 20px;
+            border-radius: 20px;
+        }
+        .content span:nth-child(3) p {
+            position: relative;
+            top: -20px;
+        }
+        .content span:nth-child(3) p a {
+            position: relative;
+            top: -1px;
+            left: 5px;
+            font-size: 13px;
+        }
+        .text2 span {
+            font-size: 23px;
+            position: relative;
+            top: -320px;
+            left: 485px;
+        }
+        .text2 span:nth-child(3) {
+            font-size: 12px;
+            color: rgb(87, 87, 87);
+            position: relative;
+            top: -290px;
+            left: 325px;
+        }
+
+
+        .trip {
+            background-image: url("image/4.jpg");
+            background-size: 240px 140px;
+            width: 240px;
+            height: 140px; 
+            position: relative;
+            left: 250px;
+            top: 10px;
+        }
+        .trip span {
+            color: #fff;
+            position: relative;
+            left: 15px;
+            top: 10px;
+            font-size: 10px;
+        }
+        .trip2 {
+            background-image: url("image/5.jpg");
+            background-size: 240px 140px;
+            width: 240px;
+            height: 140px; 
+            position: relative;
+            left: 600px;
+            top: -125px;
+        }
+        .trip2 span {
+            color: #fff;
+            position: relative;
+            left: 15px;
+            top: 5px;
+            font-size: 10px;
+        }
+        .싱가포르 ul {
+            list-style: none;
+            position: relative;
+            left: 5px;
+        }
+        .싱가포르 ul li:first-child {
+            font-size: 21px;
+            position: relative;
+            left: 230px;
+            margin-bottom: -5px;
+            margin-top: 25px;
+        }
+        .싱가포르 ul li:nth-child(3) p {
+            position: relative;
+            top: -26px;
+            left: 7px;
+        }
+        .싱가포르 ul li:nth-child(3) img {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            left: -75px;
+            top: 1px;
+        }
+        .싱가포르 ul li:last-child img {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            left: -75px;
+            top: 1px;
+        }
+        .싱가포르 ul li:nth-child(3) {
+            font-size: 10px;
+            position: relative;
+            left: 230px;
+            top: 0px;
+            border: 1px solid rgb(156, 156, 156);
+            width: 190px;
+            height: 20px;
+            text-align: center;
+        }
+        .싱가포르 ul li:last-child {
+            font-size: 10px;
+            position: relative;
+            left: 230px;
+            top: 10px;
+            border: 1px solid rgb(156, 156, 156);
+            width: 190px;
+            height: 20px;
+            text-align: center;
+        }
+        .싱가포르 ul li:last-child p {
+            position: relative;
+            top: -26px;
+            left: 8px;
+        }
+        .bor {
+            border: 1px solid rgb(123, 123, 123);
+            width: 224px;
+            height: 260px;
+            position: absolute;
+            left: 258px;
+            top: 18px;
+            box-shadow: 0 3px 10px rgb(141, 141, 141);
+        }
+        .wrap1 {
+            position: relative;
+            top: -250px;
+            left: -40px;
+        }
+
+        
+        .trip2 {
+            background-image: url("image/4.jpg");
+            background-size: 240px 140px;
+            width: 240px;
+            height: 140px; 
+            position: relative;
+            left: 250px;
+            top: 10px;
+        }
+        .trip2 span {
+            color: #fff;
+            position: relative;
+            left: 15px;
+            top: 10px;
+            font-size: 10px;
+        }
+        .trip2 {
+            background-image: url("image/5.jpg");
+            background-size: 238px 140px;
+            width: 238px;
+            height: 140px; 
+            position: relative;
+            left: 253px;
+            top: 17px;
+        }
+        .trip2 span {
+            color: #fff;
+            position: relative;
+            left: 15px;
+            top: 5px;
+            font-size: 10px;
+        }
+        .태국방콕 ul {
+            list-style: none;
+            position: relative;
+            left: 5px;
+        }
+        .태국방콕 ul li:first-child {
+            font-size: 21px;
+            position: relative;
+            left: 230px;
+            margin-bottom: -5px;
+            margin-top: 25px;
+        }
+        .태국방콕 ul li:nth-child(3) p {
+            position: relative;
+            top: -26px;
+            left: 7px;
+        }
+        .태국방콕 ul li:nth-child(3) img {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            left: -75px;
+            top: 1px;
+        }
+        .태국방콕 ul li:last-child img {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            left: -75px;
+            top: 1px;
+        }
+        .태국방콕 ul li:nth-child(3) {
+            font-size: 10px;
+            position: relative;
+            left: 230px;
+            top: 0px;
+            border: 1px solid rgb(156, 156, 156);
+            width: 190px;
+            height: 20px;
+            text-align: center;
+        }
+        .태국방콕 ul li:last-child {
+            font-size: 10px;
+            position: relative;
+            left: 230px;
+            top: 10px;
+            border: 1px solid rgb(156, 156, 156);
+            width: 190px;
+            height: 20px;
+            text-align: center;
+        }
+        .태국방콕 ul li:last-child p {
+            position: relative;
+            top: -26px;
+            left: 8px;
+        }
+        .bor2 {
+            border: 1px solid rgb(123, 123, 123);
+            width: 224px;
+            height: 260px;
+            position: absolute;
+            left: 258px;
+            top: 18px;
+            box-shadow: 0 3px 10px rgb(141, 141, 141);
+        }
+        .wrap2 {
+            position: relative;
+            top: -520px;
+            left: 220px;
+        }
+
+
+        .trip3 {
+            background-image: url("image/4.jpg");
+            background-size: 240px 140px;
+            width: 240px;
+            height: 140px; 
+            position: relative;
+            left: 250px;
+            top: 10px;
+        }
+        .trip3 span {
+            color: #fff;
+            position: relative;
+            left: 15px;
+            top: 10px;
+            font-size: 10px;
+        }
+        .trip3 {
+            background-image: url("image/6.jpg");
+            background-size: 233px 140px;
+            width: 233px;
+            height: 140px; 
+            position: relative;
+            left: 255px;
+            top: 13px;
+        }
+        .trip3 span {
+            color: #fff;
+            position: relative;
+            left: 15px;
+            top: 5px;
+            font-size: 10px;
+        }
+        .제주도 ul {
+            list-style: none;
+            position: relative;
+            left: 5px;
+        }
+        .제주도 ul li:first-child {
+            font-size: 21px;
+            position: relative;
+            left: 230px;
+            margin-bottom: -5px;
+            margin-top: 25px;
+        }
+        .제주도 ul li:nth-child(3) p {
+            position: relative;
+            top: -26px;
+            left: 7px;
+        }
+        .제주도 ul li:nth-child(3) img {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            left: -75px;
+            top: 1px;
+        }
+        .제주도 ul li:last-child img {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            left: -75px;
+            top: 1px;
+        }
+        .제주도 ul li:nth-child(3) {
+            font-size: 10px;
+            position: relative;
+            left: 230px;
+            top: 0px;
+            border: 1px solid rgb(156, 156, 156);
+            width: 190px;
+            height: 20px;
+            text-align: center;
+        }
+        .제주도 ul li:last-child {
+            font-size: 10px;
+            position: relative;
+            left: 230px;
+            top: 10px;
+            border: 1px solid rgb(156, 156, 156);
+            width: 190px;
+            height: 20px;
+            text-align: center;
+        }
+        .제주도 ul li:last-child p {
+            position: relative;
+            top: -26px;
+            left: 8px;
+        }
+        .bor3 {
+            border: 1px solid rgb(123, 123, 123);
+            width: 224px;
+            height: 260px;
+            position: absolute;
+            left: 258px;
+            top: 18px;
+            box-shadow: 0 3px 10px rgb(141, 141, 141);
+        }
+        .wrap3 {
+            position: relative;
+            top: -790px;
+            left: 480px;
+        }
+        .mid {
+            font-size: 23px;
+            position: relative;
+            top: -700px;
+            left: 450px;
+        }
+        .mid2 ul {
+            display: flex;
+            list-style: none;
+            color: rgb(0, 0, 161);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .mid2 ul li:first-child {
+            position: relative;
+            left: 300px;
+            top: -720px;
+        }
+        .mid2 ul li:last-child {
+            position: relative;
+            left: 720px;
+            top: -720px;
+        }
+
+
+        .국내 ul {
+            display: flex;
+            list-style: none;
+            width: 350px;
+            justify-content: space-between;
+            position: relative;
+            top: -715px;
+            left: 145px;
+        }
+        .국내 ul li:nth-child(1) { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);
+            background-color: rgb(206, 222, 255);
+        }
+        .국내 ul li:nth-child(2) { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);           
+        }
+        .국내 ul li:nth-child(3) { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);            
+        }
+        .국내 ul li:nth-child(4) { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);           
+        }
+        .국내 ul li:nth-child(5) { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);
+        } 
+        .국내 ul li:last-child { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);        
+        }
+        
+        .해외 ul {
+            display: flex;
+            list-style: none;
+            width: 370px;
+            justify-content: space-between;
+            position: relative;
+            top: -763px;
+            left: 600px;
+        }
+        .해외 ul li:nth-child(1) { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);
+            background-color: #fff;
+        }
+        .해외 ul li:nth-child(2) { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);
+            background-color: rgb(206, 222, 255);         
+        }
+        .해외 ul li:nth-child(3) { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);
+        }
+        .해외 ul li:nth-child(4) { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);
+        }
+        .해외 ul li:nth-child(5) { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);
+        } 
+        .해외 ul li:last-child { 
+            border: 1px solid rgb(155, 155, 155);
+            padding: 4px 6px;
+            color: rgb(68, 68, 68);;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <ul>
+            <li><img src="image\logo.jpg" alt="logo"></li>
+            <li><img src="image\bar.jpg" alt="bar"></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>해외여행</li>
+            <li>국내여행</li>
+            <li>버스투어</li>
+            <li>항공</li>
+            <li>숙소예약</li></li>
+        </ul>
+    </div>
+    <div class="search">
+        <p><img src="image\glass copy.png" alt="glass">
+            <div class="qa">&nbsp;&nbsp;여행지,숙박,교통 등으로 검색</div></p>
+    </div>
+    <div class="toplist">
+        <ul>
+            <li>환율검색</li>
+            <li><img src="image\태극기.jpg" alt="태극기"></li>
+            <li>&nbsp;&nbsp;|&nbsp;&nbsp;KRW ▼ |</li>
+            <li> &nbsp;&nbsp;로그인&nbsp; |</li>
+            <li> &nbsp;&nbsp;회원가입&nbsp; |</li>
+            <li> &nbsp;&nbsp;고객센터</li>
+        </ul>
+    </div>
+    <div class="line1"></div>
+    <div class="text1">
+        <p><strong>여행 시즌이 돌아왔어요!</strong></p>
+    </div>
+        <div class="background-wrap">
+          <div class="content">
+            <span><h3>국내여행</h3></span>
+            <span><strong>총 1840개의 여행상품</strong></span>
+            <span><p><strong>보러가기<a>></a></strong></p></span>
+          </div>
+        </div>
+      </div>
+      <div class="background-wrap2">
+        <div class="content">
+          <span><h3>해외여행</h3></span>
+          <span><strong>총 720개의 여행상품</strong></span>
+          <span><p><strong>보러가기<a>></a></strong></p></span>
+        </div>
+      </div>
+    </div>
+    <div class="text2">
+        <span><strong>이달의 추천 여행상품</strong></span><br>
+        <span> &nbsp;&nbsp; &nbsp;&nbsp;#특가혜택 적용  &nbsp;&nbsp; &nbsp;&nbsp;#지역 가이드 활성화  &nbsp;&nbsp; &nbsp;&nbsp;#두 지역간 왕복 가능 &nbsp;&nbsp; &nbsp;&nbsp; #고객 리뷰 이벤트 </span>
+      </div>
+      <div class="wrap1">
+      <div class="trip">
+        <span>해외여행</span>
+      </div>
+        <div class="싱가포르">
+        <ul>
+            <li><strong>싱가포르</strong></li><br>
+            <li><img src="image/car.jpg" alt=""><p><strong>여행지 숙박 & 교통시설</strong>&nbsp;&nbsp;></p></li>
+            <li><img src="image/book.jpg" alt=""><p><strong>가이드 및 리뷰 보러가기</strong>&nbsp;&nbsp;></p></li>
+        </ul>
+        </div>   
+        <div class="bor"></div>
+    </div>
+    <div class="wrap2">
+        <div class="trip2">
+          <span>해외여행</span>
+        </div>
+          <div class="태국방콕">
+          <ul>
+              <li><strong>태국 방콕</strong></li><br>
+              <li><img src="image/car.jpg" alt=""><p><strong>여행지 숙박 & 교통시설</strong>&nbsp;&nbsp;></p></li>
+              <li><img src="image/book.jpg" alt=""><p><strong>가이드 및 리뷰 보러가기</strong>&nbsp;&nbsp;></p></li>
+          </ul>
+          </div>   
+          <div class="bor2"></div>
+      </div>
+      <div class="wrap3">
+        <div class="trip3">
+          <span>해외여행</span>
+        </div>
+          <div class="제주도">
+          <ul>
+              <li><strong>제주도</strong></li><br>
+              <li><img src="image/car.jpg" alt=""><p><strong>여행지 숙박 & 교통시설</strong>&nbsp;&nbsp;></p></li>
+              <li><img src="image/book.jpg" alt=""><p><strong>가이드 및 리뷰 보러가기</strong>&nbsp;&nbsp;></p></li>
+          </ul>
+          </div>   
+          <div class="bor3"></div>
+      </div>
+      <div class="mid">
+        <p><strong>소개하고 싶은 여행지 리뷰</strong></p><br>
+      </div>
+      <div class="mid2">
+        <ul>
+            <li>국내</li>
+            <li>해외</li>
+        </ul>
+      </div> 
+      <div class="국내">
+        <ul>
+            <li>서울</li>
+            <li>부산</li>
+            <li>제주</li>
+            <li>대전</li>
+            <li>동해</li>
+            <li>남해</li>
+        </ul>
+        <div class="해외">
+            <ul>
+                <li>유럽</li>
+                <li>일본</li>
+                <li>중국</li>
+                <li>미국</li>
+                <li>동남아</li>
+                <li>휴양지</li>
+            </ul>
+    </div>
+    </body>
+</html>

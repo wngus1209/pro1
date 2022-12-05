@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr1 = [];
+        arr1[1] = 80;
+        arr1[2] = 90;
+        arr1[3] = 70;
+        arr1[4] = arr1[1]+arr1[2]+arr1[3]
+        arr1[5] = arr1[4] / 3
+        document.write("하의숙님의 총점은 " + arr1[4] + "점 입니다." , "<br>");
+        document.write("하의숙님의 평균은 " + arr1[5] + "점 입니다." , "<br>","<br>");
+
+        const arr2 = [];
+        arr2[1] = 90;
+        arr2[2] = 90;
+        arr2[3] = 80;
+        arr2[4] = arr2[1]+arr2[2]+arr2[3]
+        arr2[5] = arr2[4] / 3
+        document.write("홍길동님의 총점은 " + arr2[4] + "점 입니다." , "<br>")
+        document.write("하의숙님의 평균은 " + arr2[5].toFixed(1) + "점 입니다." , "<br>","<br>");
+
+        const arr3 = [];
+        arr3[1] = 100;
+        arr3[2] = 90;
+        arr3[3] = 80;
+        arr3[4] = arr3[1]+arr3[2]+arr3[3]
+        arr3[5] = arr3[4] / 3
+        document.write("홍길동님의 총점은 " + arr3[4] + "점 입니다." , "<br>")
+        document.write("하의숙님의 평균은 " + arr3[5] + "점 입니다." , "<br>");
+        
+
+    </script>
+</body>
+</html>

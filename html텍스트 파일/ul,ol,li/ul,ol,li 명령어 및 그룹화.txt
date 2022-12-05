@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul태그</title>
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+            margin: 10px 20px 30px 40px;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        ol {
+            margin: 20px;
+            padding: 20px;
+        }
+        ol#im {
+            list-style-image: url(images/ico_bbslist.gif);
+        }       
+    </style>
+             /* .a01, .a02, .p, .li {
+                그룹선택 } */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul태그</title>
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+            margin: 10px 20px 30px 40px;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        ol {
+            margin: 20px;
+            padding: 20px;
+        }
+        ol#im {
+            list-style-image: url(images/ico_bbslist.gif);
+        }       
+    </style>
+             /* .a01, .a02, .p, .li {
+                그룹선택 } */
+                /* 위에 기입된 스타일은 임의값이므로 생략해도됨 */ -->
+</head>
+<body>
+    <p class="a01">클래스이름이a01</p>
+    <ul class="a01">
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+        <!-- li는 제목 앞에 점이 찍힌다 -->
+        <!-- li는 ol,ul하위태그로만 사용 가능 -->
+
+    </ul>
+    <ul class="a02">
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+    </ul>
+    <ol>
+        <ol>리스트1</ol>
+        <ol>리스트2</ol>
+        <ol>리스트3</ol>
+        <ol>리스트4</ol>
+    </ol>
+    <ol id="im">
+        <ol>리스트1</ol>
+        <ol>리스트2</ol>
+        <ol>리스트3</ol>
+        <ol>리스트4</ol>
+        <ul>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+            <li>리스트4
+                <li>리스트</li>
+                <li>리스트</li>
+                <li>리스트</li>
+                <li>리스트</li>
+            </li>
+        </ul>
+    </ol>
+</body>
+</html>

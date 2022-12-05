@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 300px;
+        height: 500px;
+        border: 1px solid #ccc;
+      }
+      .con {
+        width: 300px;
+        height: 70px;
+        background: #fff;
+        cursor: pointer;
+      }
+      .con p {
+        line-height: 65px;
+        padding-left: 20px;
+      }
+      .con:hover {
+        background: rgb(232, 232, 232);
+      }
+      .box2 {
+        position: absolute;
+        top: 0;
+        left: 301px;
+        font-size: 20px;
+        font-weight: bold;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        width: 1000px;
+        height: 502px;
+      }
+      .box2 p {
+        line-height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="con">
+        <p class="con2" onmouseover="tab(0)">content1</p>
+      </div>
+      <div class="con">
+        <p class="con2" onmouseover="tab(1)">content2</p>
+      </div>
+      <div class="con">
+        <p class="con2" onmouseover="tab(2)">content3</p>
+      </div>
+    </div>
+    <div class="box2">
+      <p>content1</p>
+    </div>
+    <div class="box2">
+      <p>content2</p>
+    </div>
+    <div class="box2">
+      <p>content3</p>
+    </div>
+  </body>
+  <script>
+    window.open("23.html", "함수연습", "width=500,height=500");
+    let chcolor = ["#ccc", "#999", "#777"];
+    let content = document.getElementsByClassName("box2");
+    let mouse = document.getElementsByClassName("con2");
+    function tab(j) {
+      let i = 0;
+      while (1 <= 2) {
+        content[i].style.backgroundColor = chcolor[i];
+        content[i].style.display = "none";
+        content[j].style.display = "block";
+
+        i++;
+      }
+    }
+    tab(0);
+  </script>
+</html>

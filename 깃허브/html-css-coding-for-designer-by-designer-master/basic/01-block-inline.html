@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div vs span</title>
+    <style>
+        div.block {
+            background-color: blueviolet;
+            width: 200px;
+            height: 100px;
+            border: 4px solid gray;
+        }
+
+        span.inline {
+            background-color: brown;
+            border: 5px solid gray;
+
+            width: 100px;
+            height: 200px;
+        }
+
+        div.btn {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            background-color: coral;
+            color: whitesmoke;
+            margin: 20px;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <h2>Block vs inline</h2>
+    <div class="block">
+        div is block
+    </div>
+    <div class="block">
+        div is block
+    </div>
+
+    <span class="inline">span is inline.  inline은 width, height 적영되지 않는다.</span>
+    <span class="inline">span is inline.  inline 요소는 컨테츠의 양만큼 차지한다.</span>
+    <span class="inline">span is inline. </span>
+    <br>
+    <div class="btn">inline-block</div>
+    <div class="btn ">inline 속성과 block 속성을 모두 가진다.</div>
+    <div class="btn ">1) 기본적으로 inline 속성임.</div>
+    <div class="btn">2) width, height  지정가능</div>
+</section>
+<hr>
+
+</body>
+</html>

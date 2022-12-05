@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let msg = prompt("지역을 입력해 주세요")
+        if (msg=="대전") {
+            num = "042"
+        } else if (msg=="서울") {
+            num = "02"
+        } else if (msg=="부산") {
+            num = "051"
+        } else {
+            num = "등록되지 않은 지역"
+        }
+        document.write("입력하신 지역은  " + msg + "이고 지역번호는 " + num + "입니다." );
+    </script>
+</body>
+</html>

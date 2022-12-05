@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ecc0ce3a39.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            background: #485861;
+            margin: 0; 
+            padding: 0;
+        }
+        .top p {
+            background: #FFC000;
+            width: 55px;
+            height: 60px;
+            margin: 0 24px;
+            padding: 18px 0 0 13px;
+            font-size: 10px;
+            color: rgba(13, 78, 83, 0.979);
+            position: absolute;
+            right: 0px;
+            top: 0;
+            animation: slide 0.5s 0.5s both;
+
+        }
+        .vol4 {
+            font-size: 30px;
+            font-family: "open sans";
+            color: #ffe6cf;
+            margin-top: 75px;
+            margin-left: 24px;
+            animation: slide2 0.5s 0.1s both;
+        }
+        .classic {
+            font-size: 30px;
+            font-family: "open sans";
+            color: #ffe6cf;
+            margin-top: 85px;
+            margin-left: 24px;
+            line-height: 30px;
+            animation: slide3 0.5s 0.1s both;
+        }
+        .line {
+           background: #ffe6cf;
+           position: absolute;
+           top: 220px;
+           left: 140px;
+           width: 47px;
+           height: 1px;
+           animation: slide4 0.5s 0.1s both;
+           z-index: 3;
+        }
+        .we {
+            font-size: 11px;
+            font-family: "open sans";
+            color: #ffe6cf;
+            margin-top: 25px;
+            margin-left: 24px;
+            animation: slide5 0.5s 0.2s both;
+        }
+
+        .cir ul {
+            list-style: none;
+            margin-top: 45px;
+            margin-left: 25px;
+            display: flex;
+        }
+        .cir ul li {
+            position: relative;
+        }
+        .cir ul li  {  
+            animation: slide6 0.5s both;
+        }
+        .cir ul li:first-child {
+            width: 250px;
+            height: 250px;
+            border: 1px solid rgb(55, 55, 55);
+            border-radius: 1000px;
+            background: #485861;
+            animation-delay: 0.3s;
+            z-index: 0; 
+        }
+        .cir ul li:nth-child(2)  {
+            width: 250px;
+            height: 250px;
+            background: #FFC000;
+            border-radius: 1000px;
+            margin-left: -170px;
+            animation-delay: 0.4s;
+            z-index: 1;
+        }
+        .cir ul li:nth-child(3)  {
+            width: 250px;
+            height: 250px;
+            background: #fedd15;
+            border-radius: 1000px;
+            margin-left: -170px;
+            animation-delay: 0.5s;
+            z-index: 2;
+        }
+        .cir ul li:hover {
+            position: relative;
+            background: #0000ff;
+            top: -20px;
+        }
+        .cir ul li:active {
+            position: relative;
+            background-color: red;
+            top: -20px;
+        }
+        @keyframes slide {
+            from {transform: translateY(-60px); opacity: 0;}
+            to {transform: translateY(0px); opacity: 1;}
+        }
+        @keyframes slide2 {
+            from {transform: translateY(10px); opacity: 0; background: aqua;}
+            to {transform: translateY(0px); opacity: 1;}
+        }
+        @keyframes slide3 {
+            from {transform: translateY(10px); opacity: 0; background: aqua;}
+            to {transform: translateY(0px); opacity: 1;}
+        }
+        @keyframes slide4 {
+            from {transform: translateY(10px); opacity: 0; background: aqua;}
+            to {transform: translateY(0px); opacity: 1;}
+        }
+        @keyframes slide5 {
+            from {transform: translateY(10px); opacity: 0; background: aqua;}
+            to {transform: translateY(0px); opacity: 1;}
+        }
+        @keyframes slide6 {
+            from { transform: translateY(100px) scale(0.5); opacity: 0;  background: aqua;}
+            to {transform: translateY(0px); opacity: 1; transform: scale(1);}
+        }
+        .icon {
+            display: flex;
+            position: absolute;
+            bottom: 25px;
+            width: 100%;
+            font-size: 25px;
+            justify-content: space-around;
+            color: #fff;
+        }
+        .icon a {
+            list-style: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <p>Ex-<br>clusive</p>
+    </div>
+    <div class="vol4">
+        <p>vol.4</p>
+    </div>
+    <div class="line"></div>
+    <div class="classic">
+        <p>Classics<br>never<br>get old</p>
+    </div>
+    <div class="we">
+        <p>We'll make a mobile magazine <br>
+        using html, css only.</p>
+    </div>
+    <div class="cir">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+    <div class="icon">
+        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+        <a href="#"><i class="fa-solid fa-book"></i></a>
+        <a href="#"><i class="fa-solid fa-heart"></i></a>
+        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+    </div>
+</body>
+</html>

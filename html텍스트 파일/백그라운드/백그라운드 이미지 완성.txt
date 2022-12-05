@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul { 
+            background-image: url(https://ifh.cc/g/LGmCtT.jpg),url(https://ifh.cc/g/LGmCtT.jpg),url(https://ifh.cc/g/cFTSQW.png);
+            background-repeat: no-repeat, no-repeat, repeat;
+            background-size: 100px,50px;
+            background-position: left top, right bottom;
+            padding: 50px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><h1>Lorem lpsum</h1></li>
+        Ipsum is simply dummy text of the printing and typesetting industry.
+        <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</li>
+        <li>and scrambled it to make a type specimen book.</li>
+    </ul>
+</body>
+</html>

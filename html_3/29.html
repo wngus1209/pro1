@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid-container {
+            width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            background: #ddd;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 300px 200px 100px;
+        }
+        .grid-item:first-child {
+            background: rgb(255, 0, 0);
+        }
+        .grid-item:nth-child(2) {
+            grid-column: 2 / 4;
+            background: rgb(75, 235, 99);
+        }
+        .grid-item:nth-child(3) {
+            grid-column: 1 / 4;
+            background: #aaa;
+            grid-row: 2;
+        }
+        .grid-item:nth-child(4) {
+            grid-column: 1 / 4;
+            background: #bbb;
+            grid-row: 2;
+        }
+        .grid-item:nth-child(5) {
+            background: #ccc;
+            grid-row: 3;
+        }
+        .grid-item:nth-child(6) {
+            background: #ddd;
+            grid-row: 3;
+        }
+        .grid-item:nth-child(7) {
+            background: #eee;
+            grid-row: 3;
+        }
+        .grid-item:nth-child(8) {
+            grid-column: 1/4;
+            background: rgb(255, 0, 0);
+            grid-row: 4;
+        }
+        .grid-item:nth-child(9){
+            grid-column: 2/4;
+            background: rgb(66, 255, 63);
+            grid-row: 4
+        }
+        .grid-item:last-child {
+            grid-column: 3/4;
+            background: rgb(13, 0, 255);
+            grid-row: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item">header-background:#aaa</div>
+        <div class="grid-item">slide-background:#bbb</div>
+        <div class="grid-item">contents1-background:#ccc</div>
+        <div class="grid-item">contents2-background:#ddd</div>
+        <div class="grid-item">contents3-background:#ddd</div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+</body>
+</html>

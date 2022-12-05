@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            background: #ddd;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            grid-template-rows: 100px 300px 200px 100px;
+            grid-template-areas:"a a a"
+                                "b b b"
+                                "c d e"
+                                "f f f";
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .grid-item {
+            background: #ccc;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+        .item1 {
+            background: #aaa;
+            grid-area: a;
+        }
+        .item2 {
+            background: #bbb;
+            grid-area: b;
+        }
+        .item3 {
+            background: #ccc;
+            grid-area: c;
+        }
+        .item4 {
+            background: #ddd;
+            grid-area: d;
+        }
+        .item5 {
+            background: #eee;
+            grid-area: e;
+        }
+        .item6 {
+            background: #000;
+            color: #fff;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+        <div class="grid-item item6">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul li span + p {
+            color: #f00;
+        } */
+        /* +:인접선택자 ~:형제선택자(기준 '아래에 있는'요소만 선택됨) */
+        ul li span ~ p {
+            color: #f00;
+        } 
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <p>문단태그</p>
+            <span>span태그</span>
+            <p>문단태그</p>
+            <span>span태그</span>
+            <p>문단태그</p>
+            <span>span태그</span>
+            <p>문단태그</p>
+            <ul>
+                <li>리스트</li>
+                    <span>span태그</span>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

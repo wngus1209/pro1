@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Postion :: absolute</title>
+    <style>
+        div.box {
+            width: 200px;
+            height: 200px;
+            background: lightgray;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 300px;
+            left: 900px;
+            background: goldenrod;
+            z-index: 5;
+        }
+
+        header.fixed {
+            width: 100%;
+            height: 100px;
+            background-color: darkcyan;
+            position: fixed;
+            top: 100px;
+            z-index: 10;
+
+            /*margin-bottom: 200px;*/
+        }
+
+        div.container {
+            width: 100%;
+            height: 200px;
+            background-color: gold;
+            position: relative;
+        }
+
+        div.child {
+            width: 50%;
+            height: 100px;
+            background-color: darkblue;
+            color: white;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <header class="fixed">
+        fixed 속성 => 스크롤 내려보세요
+    </header>
+    <div class="box">box1</div>
+    <div class="box">box1</div>
+    <div class="box">box1</div>
+    <div class="box">box1</div>
+    <div class="box">box1</div>
+    <div class="box">box1</div>
+    <div class="box absolute">
+        absolute.
+        box 자유롭게 위치 지정함.
+    </div>
+    <h2>positoin 속성을 사용하면 포토샵의 레이어 추가하기 기능처럼 레이어 계층이 생긴다.</h2>
+</div>
+<hr />
+
+<h2>부모자식 관계에서 relative, absolute 성질</h2>
+<div class="container">
+    container
+    <div class="child">child</div>
+</div>
+<p>
+    position: absolute 경우 절대위치로 지정할때 기준점이 최상위 왼쪽 위(0, 0) 인데
+    부모 태그 position: relative 로 설정되면 기준점이 부모태그 기준으로 변경된다.
+</p>
+
+
+</body>
+</html>
