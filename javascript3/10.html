@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>onmousemove Event</title>
+    <title>Document</title>
     <style>
       body {
         margin-top: 1000px;
@@ -22,13 +22,13 @@
       <p><input type="text" name="screen_y" /></p>
     </form>
     <script>
-      document.onmousemove = function (event) {
+      document.onmousemove = function (e) {
         let myform = document.form1;
         myform.client_x.value = "clientX : " + event.clientX;
         myform.client_y.value = "clientY : " + event.clientY;
         myform.page_x.value = "pageX : " + event.pageX;
         myform.page_y.value = "pageY : " + event.pageY;
-        myform.screen_x.value = "screenX : " + event.screenX;
+        myform.screen_x.value = "scr eenX : " + event.screenX;
         myform.screen_y.value = "screenY : " + event.screenY;
       };
     </script>
